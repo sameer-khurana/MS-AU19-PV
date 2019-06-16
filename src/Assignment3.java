@@ -23,7 +23,13 @@ public class Assignment3 <T extends Comparable<T>> implements Comparable<Assignm
     }
 
     public static void main(String[] args) {
-
+        Assignment3<Integer> a = new Assignment3<>();
+        Assignment3<Integer> a1 = new Assignment3<>();
+        a.setT(10);
+        a1.setT(10);
+        System.out.println(a.equals(a1));
+        a1.setT(20);
+        System.out.println(a.compareTo(a1));
     }
 
     @Override
